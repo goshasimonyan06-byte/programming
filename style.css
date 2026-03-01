@@ -12,6 +12,8 @@ header{
 main{
     height: 600px;
 
+    background-image: url('img/background_main.png');
+    background-size: cover;
 }
 
 footer{
@@ -22,7 +24,7 @@ footer{
     display: flex;
     flex-direction: column;
     min-height: 80px;
-    background-color: #ffe3c7;
+    background-color: rgb(255, 227, 199);
 }
 
 .menu{
@@ -33,7 +35,24 @@ footer{
     list-style: none;
 }
 
-.main_img{
-    height: 600px;
+.background_main{
     width: 100%;
+}
+
+.main_img{
+    padding: 60px 30px;
+    height: 450px;
+}
+
+.description{
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(255, 227, 199, 0.8);
+    
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
