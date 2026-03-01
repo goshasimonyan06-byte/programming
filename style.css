@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffe3c7;
+}
+
+main{
+    height: 600px;
+
+}
+
+footer{
+    margin-top: auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 80px;
+    background-color: #ffe3c7;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4em;
+    list-style: none;
+}
+
+.main_img{
+    height: 600px;
+    width: 100%;
+}
