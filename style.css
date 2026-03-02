@@ -10,21 +10,16 @@ header{
 }
 
 main{
-    height: 600px;
-
     background-image: url('img/background_main.png');
     background-size: cover;
 }
 
-footer{
-    margin-top: auto;
+p{
+    font-size: 24px;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    min-height: 80px;
-    background-color: rgb(255, 227, 199);
+h2{
+    font-size: 32px;
 }
 
 .menu{
@@ -51,8 +46,27 @@ footer{
     
 }
 
-.main{
+.cover{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 640px;
+}
+
+.best_orders{
+    padding: 20px;
+    height: fit-content;
+    background-color: aliceblue;
+}
+
+.top_orders{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top_img{
+    height: 400px;
+    margin-right: 20px;
 }
