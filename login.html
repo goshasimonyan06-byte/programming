@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store login</title>
+    <link rel="icon" href="img/icon.png" type="#">
+</head>
+<body>
+    <img class="logo" src="C:\Desktop\logo.png" alt="logo">
+
+    <div class="container">
+        <h1>Вход в аккаунт</h1>
+        <form action="login" method="post">
+            <!-- Ввод имени пользователя -->
+            <label for="username">username</label>
+            <input type="text" name="username">
+
+            <!-- Ввод логина пользователя -->
+             <label for="email">email</label>
+            <input type="email" name="email">
+
+            <!-- Ввод пароля пользователя -->
+            <label for="password">password</label>
+            <input type="password" name="password">
+            <div>
+                <!-- Кнопка входа -->
+                 <p style="margin-bottom: 0;">Нет аккаунта?<a href="#">Регистрация</a></p>
+                <button style="background-color: lightcoral; width: 50px; margin-left:400px ;" type="submit">Войти</button>
+
+            </div>
+            
+            
+        </form>
+    </div>
+
+
+
+    <style>
+        body{
+            background-color: rgb(255, 255, 167);
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+
+        .container{
+            display: flex;
+            
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 30px;
+            height: 600px;
+            width: 500px;
+            background-color:beige;
+        }
+    </style>
+</body>
+</html>
