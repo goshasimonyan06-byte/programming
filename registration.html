@@ -1,38 +1,40 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Store login</title>
-    <link rel="icon" href="img/icon.png" type="#">
+    <title>Online Store registration</title>
+    <link rel="icon" href="img/icon.png">
 </head>
 <body>
-    <img class="logo" src="img/logo.png" alt="logo">
-
+    <img src="img/logo.png" alt="logo">
     <div class="container">
-        <h1>Вход в аккаунт</h1>
-        <form action="login" method="post">
+        <h1>Регистрация нового аккаунта</h1>
+        <form action="registration" method="post">
             <!-- Ввод имени пользователя -->
             <label for="username">username</label>
             <input type="text" name="username">
 
-            <!-- Ввод логина пользователя -->
-             <label for="email">email</label>
+            <!-- Ввод email пользователя -->
+            <label for="email">email</label>
             <input type="email" name="email">
 
             <!-- Ввод пароля пользователя -->
             <label for="password">password</label>
             <input type="password" name="password">
 
-            <p>Нет аккаунта?<a href="registration.html">Регистрация</a></p>
+            <!-- Подтверждение пароля -->
+            <label for="password">повторите пароль</label>
+            <input type="password" name="password">
+
+            <p>Есть аккаунт?<a href="login.html">Войти</a></p>
         </form>
         <div class="button_container">
             <a href="main.html"><button>Назад</button></a>
-            <!-- Кнопка входа -->
-            <a href="main.html"><button type="submit">Войти</button></a>
+            <!-- кнопка продолжения -->
+            <a href="main.html"><button type="submit">Зарегистрироваться</button></a>
         </div>
     </div>
-
 
 
     <style>
@@ -59,6 +61,7 @@
             width: 500px;
             background-color:beige;
         }
+
         .button_container{
             display: flex;
             flex-direction: row;
