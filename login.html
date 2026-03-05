@@ -24,13 +24,15 @@
             <label for="password">password</label>
             <input type="password" name="password">
 
-            <p>Нет аккаунта?<a href="registration.html">Регистрация</a></p>
+            <div class="continue_container">
+                <p>Нет аккаунта?<a href="registration.html">Регистрация</a></p>
+                <!-- Кнопка входа -->
+                <a href="main.html"><button type="submit">Войти</button></a>
+            </div>
+            
         </form>
-        <div class="button_container">
-            <a href="main.html"><button>Назад</button></a>
-            <!-- Кнопка входа -->
-            <a href="main.html"><button type="submit">Войти</button></a>
-        </div>
+        <!-- Кнопка назад -->
+        <a class="button_back" href="main.html"><button>Назад</button></a>
     </div>
 
 
@@ -59,10 +61,14 @@
             width: 500px;
             background-color:beige;
         }
-        .button_container{
+        .continue_container{
             display: flex;
             flex-direction: row;
+            align-items: center;
             justify-content: space-between;
+        }
+        .button_back{
+            width: fit-content;
         }
     </style>
 </body>

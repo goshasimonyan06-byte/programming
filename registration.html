@@ -26,14 +26,14 @@
             <!-- Подтверждение пароля -->
             <label for="password">повторите пароль</label>
             <input type="password" name="password">
-
-            <p>Есть аккаунт?<a href="login.html">Войти</a></p>
+            <div class="continue_container">
+                <p>Есть аккаунт?<a href="login.html">Войти</a></p>
+                <!-- кнопка продолжения -->
+                <a href="main.html"><button type="submit">Зарегистрироваться</button></a>
+            </div> 
         </form>
-        <div class="button_container">
-            <a href="main.html"><button>Назад</button></a>
-            <!-- кнопка продолжения -->
-            <a href="main.html"><button type="submit">Зарегистрироваться</button></a>
-        </div>
+        <!-- Кнопка Назад -->
+        <a class="button_back" href="main.html"><button>Назад</button></a>
     </div>
 
 
@@ -62,10 +62,14 @@
             background-color:beige;
         }
 
-        .button_container{
+        .continue_container{
             display: flex;
             flex-direction: row;
+            align-items: center;
             justify-content: space-between;
+        }
+        .button_back{
+            width: fit-content;
         }
     </style>
 </body>
